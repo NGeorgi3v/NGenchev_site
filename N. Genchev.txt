@@ -1,0 +1,234 @@
+#### CSS ####
+####  -MAIN ####
+body
+{
+	background: url('bg.jpg') no-repeat, #d35400;
+    background-size: cover;
+}
+
+.container
+{
+	width: 85%;
+	margin: 0 auto;
+	text-align: justify;
+	font: 12pt Verdana;
+	color: #fff;
+	padding: 5px;
+}
+
+header
+{
+	width: 95%;
+	margin: 0;
+}
+
+header::after {
+    content: "";
+    margin: 0 auto;
+    text-align: center;
+    width: 81%;
+    height: 19%;
+    background: url(header.jpg) no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.754;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.headerLogo
+{
+	background: url('logo.jpg') no-repeat;
+	float: left;
+	background-size: cover;
+	width: 110px;
+	height: 110px;
+	border-radius: 15px 25px;
+	border: 1.5px solid white;
+}
+
+.headerTitle
+{
+	padding: 5px;
+	font-family: "Sans Serif";
+}
+
+nav
+{
+	width: 95.3%;
+	height: 40px;
+	margin: -20px 0 5px 0;
+	background: url('nav.png') no-repeat;
+	background-size: cover;
+}
+
+nav>ul>li
+{
+	list-style: none;
+	line-height: 32.2pt;
+	display: inline;
+	padding: 10px 20px;
+}
+
+nav>ul>li a, nav>ul>li a:link, nav>ul>li a:visited
+{
+	color: #FFF;
+	text-decoration: none;
+}
+
+nav>ul>li:hover
+{
+	cursor: pointer;
+	background: #2c3e50;
+	transition: all 0.5s ease;
+}
+
+nav>ul>li a:hover
+{
+	color: #d35400;
+	transition: all 0.2s ease;
+}
+
+main
+{
+	width: 95%;
+	padding: 5px 0px;
+	border: 1px solid black;
+	background: url('main.jpg') no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+	min-height: 555px;
+	color: #000;
+}
+
+main > aside
+{
+	padding: 5px;
+	opacity: 0.85;
+	background: #fff;
+	border: 1px solid #000;
+	float: left;
+	margin-left: 5px;
+	display: inline-block;
+	width: 30%;
+}
+
+main > section
+{
+	padding: 5px;
+	background: #fff;
+	border: 1px solid #000;
+	opacity: 0.85;
+	float: right;
+	margin-right: 5px;
+	display: inline-block;
+	width: 65%;
+}
+
+footer
+{
+	background: url('footer.jpg') no-repeat;
+	background-size: cover;
+	width: 94%;
+	padding: 2px;
+	margin: 0;
+	margin-left: 1.5px;
+	height: 50px;
+}
+
+.clr
+{
+	clear: both;
+}
+
+#### -NORMALIZE ####
+/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */button,hr,input{overflow:visible}audio,canvas,progress,video{display:inline-block}progress,sub,sup{vertical-align:baseline}[type=checkbox],[type=radio],legend{box-sizing:border-box;padding:0}html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figure{margin:1em 40px}hr{box-sizing:content-box;height:0}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative}sub{bottom:-.25em}sup{top:-.5em}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:ButtonText dotted 1px}fieldset{padding:.35em .75em .625em}legend{color:inherit;display:table;max-width:100%;white-space:normal}textarea{overflow:auto}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}[hidden],template{display:none}
+
+
+
+
+
+
+
+
+
+
+#### HTML ####
+<!doctype html>
+<html>
+  <head>
+	<title> Pavel`s webpage </title>
+	<meta charset='utf-8'>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel='stylesheet' href='normalize.css' />
+	<link rel='stylesheet' href='style.css' />
+  </head>
+  <body>
+	<div class='container'>
+		<header>
+			<div class='headerLogo'></div>
+			<div class='headerTitle'>
+				<h1> Paul &amp; Nick`s WebPage </h1>
+				<h3> This is our first project together </h3>
+			</div>
+		</header>
+		<nav>
+			<ul>
+				<li><a href='index.html'>Homepage</a></li>
+				<li><a href='index.html'>About Us</a></li>
+				<li><a href='index.html'>Gallery</a></li>
+				<li><a href='index.html'>Contacts</a></li>
+			</ul>
+		</nav>
+		<main>
+			<aside>
+				<div class='box'>
+					<div class='boxTitle'> About me </div>
+					<div class='boxContent'> 
+						<p> I`m Paul from Varna, BG! </p>
+					</div>
+				</div>
+				<div class='box'>
+					<div class='boxTitle'> About me </div>
+					<div class='boxContent'> 
+						<p> I`m Nicholas from Veliko Tyrnovo, BG! </p>
+					</div>
+				</div>
+				<div class='box'>
+					<div class='boxTitle'> Sidebar </div>
+					<div class='boxContent'> 
+						<ul type='circle'>
+							<li><a href='#page1'>Page1</a></li>
+							<li><a href='#page2'>Page2</a></li>
+							<li><a href='#page3'>Page3</a></li>
+							<li><a href='#page4'>Page4</a></li>
+							<li><a href='#page5'>Page5</a></li>
+							<li><a href='#page6'>Page6</a></li>
+						</ul>
+					</div>
+				</div>
+			</aside>
+			<section>
+				<article>
+					<div class='articleTitle'> Welcome </div>
+					<div class='articleContent'>
+						<p> Welcome to our first webpage! Here you can read more about us and our skills. </p>
+					</div>
+				</article>
+				<article></article>
+				<article></article>
+			</section>
+		</main>
+		<div class='clr'></div>
+		<footer>
+			<p> Copyright &copy; 2017 All rights reserved. Design by Paul & Nick </p>
+		</footer>
+	</div>
+  </body>
+</html>
